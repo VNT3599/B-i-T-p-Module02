@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Test {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Product sanPham = new Product();
+        Product product = new Product();
 
         int luaChon;
         do {
@@ -19,13 +19,13 @@ public class Test {
             luaChon = scanner.nextInt();
             switch (luaChon) {
                 case 1:
-                    sanPham.nhapThongTinSanPham();
+                    product.nhapThongTinSanPham();
                     break;
                 case 2:
-                    sanPham.hienThiThongTinSanPham();
+                    product.hienThiThongTinSanPham();
                     break;
                 case 3:
-                    double loiXuat = sanPham.tinhLoiXuat();
+                    double loiXuat = product.tinhLoiXuat();
                     System.out.println("Lợi xuất: " + loiXuat);
                     break;
                 case 4:
